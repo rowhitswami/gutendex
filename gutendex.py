@@ -195,6 +195,7 @@ class Queries():
                 download_links[link.mime_type] = link.url
 
             one_book['title'] = book.title
+            one_book['genre'] = book.media_type
             if book.author:
                 one_book['author'] = book.author.author.name
             else:
